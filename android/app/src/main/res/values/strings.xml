@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">capacitor-vite-typescript-template</string>
+    <string name="title_activity_main">capacitor-vite-typescript-template</string>
+    <string name="package_name">com.capacitorvitetypescript.template</string>
+    <string name="custom_url_scheme">com.capacitorvitetypescript.template</string>
+</resources>

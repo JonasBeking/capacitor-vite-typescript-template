@@ -1,0 +1,36 @@
+{
+  "name": "capacitor-template",
+  "version": "1.0.0",
+  "description": "A simple but dynamic capacitor app-template",
+  "main": "index.js",
+  "keywords": [
+    "capacitor",
+    "mobile",
+    "template"
+  ],
+  "scripts": {
+    "capacitor:sync:before" : "tsc && vite build",
+    "build": "npx cap sync android",
+    "start": "npx cap run --target %npm_package_config_capacitor_deployment_device% android",
+    "serve": "npx cap run --target %npm_package_config_capacitor_deployment_device% android --live && vite --host"
+  },
+  "dependencies": {
+    "@capacitor/android": "^4.4.0",
+    "@capacitor/camera": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/splash-screen": "latest",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest",
+    "@trapezedev/project": "^5.0.7",
+    "vite": "^2.9.13"
+  },
+  "author": "Jonas Beking",
+  "license": "ISC",
+  "config": {
+    "capacitor_deployment_device": "",
+    "capacitor_live_server_address": "",
+    "capacitor_live_server_port": 3000
+  }
+}
